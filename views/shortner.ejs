@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/shortner.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/Shortner.css">
+    <title>URL shortner</title>
 </head>
 <body>
 
@@ -25,7 +25,7 @@
         function Copyurl(){        
             const input = document.getElementById("url_input");
             console.log(input.value);
-            navigator.clipboard.writeText(input.value).then(()=>alert("text is copied"+input.value));  
+            navigator.clipboard.writeText(input.value).then(()=>alert("text is copied : " +input.value));  
         }
 
     </script>
