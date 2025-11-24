@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: cyan;
+    gap: 0.5rem;
+}
+
+.url_form {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.url_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    flex-direction: column;
+}
+
+.url_container #heading {
+    margin: 0;
+    position: absolute;
+    top: -3rem;
+    left: -0.2rem;
+}
+
+.url_container input {
+    height: 3rem;
+    width: 30rem;
+    border: 4px solid black;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: aqua;
+}
+
+.url_container label {
+    position: absolute;
+    left: 1rem;
+    top: 0.7rem;
+    transition: all 0.3s linear;
+
+}
+
+.url_container input:focus {
+    border: 4px solid green;
+    outline: none;
+}
+
+.url_container input:focus+label,
+.url_container input:not(:placeholder-shown)+label {
+    top: -0.7rem;
+    color: green;
+    background: linear-gradient(cyan, aqua);
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.url_button_container {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.url_button_container button {
+    height: 2.5rem;
+    width: 9rem;
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: aqua;
+    transition: all 0.3s ease-in;
+}
+
+.url_button_container button:hover {
+    background: aquamarine;
+    cursor: pointer;
+}
+
+.url_button_container button:active {
+    background: green;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shortner.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form class="url_form">
+        <div class="url_container">
+            <h2 id="heading">your SHORTED URL ishere ...</h2>
+            <div class="main_url">
+                <input type="text" name="url" placeholder="" id="url_input" value="http:localhost:9000/<%= id %>" readonly>
+                <label for="url_input"> get your URL </label>
+            </div>
+        </div>
+        <div class="url_button_container">
+            <button id="url_button" type="button" onclick="Copyurl()">Copy</button>
+        </div>
+    </form>
+
+    <script>
+        function Copyurl(){        
+            const input = document.getElementById("url_input");
+            console.log(input.value);
+            navigator.clipboard.writeText(input.value).then(()=>alert("text is copied"+input.value));  
+        }
+
+    </script>
+    
+</body>
+</html>
